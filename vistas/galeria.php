@@ -25,8 +25,11 @@ require 'header.php';
                       		    $consulta = "SELECT * FROM producto";
                       		    //$consulta ="SELECT * FROM detalle_producto INNER JOIN producto ON detalle_producto.id_producto=producto.id_producto";
                           		$result = mysqli_query($conexion,$consulta);
-                          		//para imprimir los datos
-                          		while ($f = mysqli_fetch_array($result)) {
+                              //para imprimir los datos
+                              while ($f = mysqli_fetch_array($result)) {
+                                  echo "<pre>";
+                                    print_r(mysqli_fetch_array($f));
+                                  echo "</pre>";
                           		    $nombre = $f['nombre_producto'];
                           		    $imagen = $f['imagen_producto'];
                           		    //$precio = $f['Precio_Unitario'];

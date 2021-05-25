@@ -122,7 +122,7 @@ require 'header.php';
 					    $total2=0;
 					    $total3=0;
 					    $total4=0;
-					    //print_r($_SESSION['carrito']);
+					    print_r($_SESSION['carrito']);
 					        //print_r($_SESSION["carrito"]);
 					    if (isset($_SESSION['carrito'])) {
 					        $datos=$_SESSION['carrito'];
@@ -181,6 +181,7 @@ require 'header.php';
 								          
 								?>
 								<a href="galeria.php" class="follow">Agregar otro producto</a>
+                                <p>aqui</p>
 							</section>
 					                    
                     <!-- FIN PRUEBAS GALERIA -->

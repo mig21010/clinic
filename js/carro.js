@@ -57,7 +57,7 @@ var inicio=function(){
 				$("#total2").text('Total Publico: '+ respuesta["total2"]);
 				$("#total3").text('Total Cosmetologa: '+ respuesta["total3"]);
 				$("#total4").text('Total Promocion: '+ respuesta["total4"]);
-				window.location.href = 'http://localhost:8080/clinica2/vistas/carrito.php';
+				window.location.href = 'http//localhost:/clinica/vistas/carrito.php';
 			}
 		});
 	});

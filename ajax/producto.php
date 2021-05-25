@@ -16,11 +16,11 @@ switch ($_GET["op"]) {
 		$ext = explode(".", $_FILES["imagen"]["name"]);
 		if ($_FILES['imagen']['type'] == "image/jpg" || $_FILES['imagen']['type'] == "image/jpeg" || $_FILES['image']['type'] == "image/png") {
 			$imagen = round(microtime(true)) . '.' . end($ext);
-			move_uploaded_file($_FILES['imagen']['tmp_name'], "../files/productos". $imagen);
+			move_uploaded_file($_FILES['imagen']['tmp_name'], "../files/productos/". $imagen);
 			}
 	}
 		if (empty($idproducto)) {
-			$rspta = $producto->insertar($nombre, $descripcion,$image);
+			$rspta = $producto->insertar($nombre, $descripcion,$imagen);
 			echo $rspta ? "Producto registrado": "Producto no se pudo registrar";
 		}else
 		{
